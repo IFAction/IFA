@@ -1,0 +1,368 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.label {
+	width: 500px;
+
+}
+
+.form-group{
+	width: 50%;
+	text-align: center;
+
+}
+
+.field {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	font-size: 24px;
+
+}
+
+.fieldsubtext {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	font-size: 15px;
+
+}
+.actions {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	font-size: 34px;
+
+}
+
+.mainimage {
+	width: 100%;
+	position: relative;
+	text-decoration: none;
+	top: 0px;
+	padding-left: 0px;
+}
+
+.emtheadertext {
+	display: inline-block;
+	position: fixed;
+	font-size: 50px;
+	width: 20%;
+	float: left;
+	/*left: 10; */
+	/*font-weight: 700;*/
+	font-family: 'Oswald', sans-serif;
+	margin: 0 auto;
+	text-align: left;
+	z-index: 100;	
+}
+
+
+.emtheadercontainer {
+	display: inline-block;
+	width: 20%;
+	position: relative;
+	font-size: 40px;
+	list-style: none;
+	/*font-family: 'Oswald', sans-serif;*/
+	margin: 0 auto;
+	padding-left: 15px;
+	/*padding-left: 30%;
+	padding-right: 30%;*/
+	text-decoration: none;
+	z-index: 1;
+
+}
+
+.logo {
+
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	font-size: 24px;
+
+}
+
+.main {
+	display: block;
+
+	
+}
+
+ul.main {
+	display: block;
+	font-family: 'Oswald', sans-serif;
+	/*padding: 0px 0px 0px 25px;*/
+	text-decoration: none;
+	text-align: center;
+}
+
+ul.main li {
+	display: inline-block;
+	font-size: 14px;
+	font-family: 'Oswald', sans-serif;
+	padding: 10px 25px 0px 0px;
+3	color: black;
+	text-decoration: none;
+}
+
+
+
+ul.main li:hover {
+	border: none;
+	text-decoration: none;
+	/*color:#002900;
+	background-color: #C6F7D9;*/
+
+}
+.divider {
+	border-top: solid 1px gray;
+	padding: 10px;
+}
+
+a, a:visited{
+     color:#313333;
+     text-decoration: none;
+}
+
+a, a:visited{
+     color:#313333;
+     text-decoration: none;
+}
+.emtfullpage {
+	width: 80%;
+	margin-left: 10%;
+	margin-left: 10%;
+
+	font-family: 'Oswald light', sans-serif;
+	position: relative;
+	display: inline-block;
+}
+
+p.narrativeblock {
+	font-family: 'Oswald', sans-serif;
+	color:  black;
+	font-weight:  300;
+	background-color: white;
+	display: inline-block;
+	width: 60%;
+
+}
+
+p.narrative {
+	font-family: 'Oswald', sans-serif;
+	color:  black;
+	font-weight:  300;
+	background-color: white;
+	display: inline-block;
+
+}
+h1{
+	font-family: 'Oswald', sans-serif;
+	color:  black;
+	font-size: 30px;
+	background-color: white;
+}
+
+h3{
+	font-family: 'Oswald', sans-serif;
+	color:  black;
+	font-size: 16px;
+}
+
+/*.emtheaderimage {
+	height: 30px;
+	width: 30px;
+}*/
+
+.featurevideo {
+	width: 100%;
+	position: absolute;
+	text-decoration: none;
+	top: 2px;
+	padding-left: 0px;
+	/*left: 1520px;*/
+	max-height: 500px;
+	/*3*/
+	/*background-color: #F8F8F8*/;
+	float: right;
+}
+
+.featurevideotitle {
+	display: relative;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	text-align: right;
+}
+
+/*.featurevideoontainer {
+	background-color: blue;
+	position: relative;
+	float: left;
+	padding: 2px;
+
+}*/
+
+.scrollphotogallery {
+	width: 100%;
+	position: relative;
+	text-decoration: none;
+	top: 0px;
+	padding-left: 0px;
+	border: black 1px;
+	height: 200px;
+
+}
+.photogalleryfull {
+	width: 100%;
+	position: relative;
+	text-decoration: none;
+	top: 2px;
+	padding-left: 0px;
+	/*left: 1520px;*/
+	height: 900px;
+	background-color: white;
+	/*background-color: #F8F8F8*/;
+	float: right;
+}
+.fixedbutton {
+	top: 90%;
+	position: fixed;
+	font-family: 'Oswald', sans-serif;
+	z-index: 100;
+}
+
+h3.fixedbutton {
+	left: 80%;
+	position: fixed;
+	font-family: 'Oswald', sans-serif;
+	opacity: 1;
+	z-index: 150;
+	/*z-index: 100;*/
+}
+
+.imagecontainer {
+	width: 45%;
+	position: relative;
+	float: left;
+	padding: 2px;
+
+}
+img {
+	width: 100%;
+	padding: 2px;
+}
+.subtitle {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 10px;
+	text-align: right;
+}
+
+.title {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	text-align: right;
+}
+.articlesubtitle {
+	display: block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 10px;
+	text-align: left;
+	margin-bottom: 4%;
+}
+
+.articletitle {
+	display: block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	text-align: left;
+}
+
+p.articletitle:hover {
+	border: none;
+	
+	/*text-decoration: none;*/
+	/*color: #59FF0D;*/
+	/*color: #FF00FF;*/
+}
+
+a:hover {
+	/*border: none;
+	font-size: 15px;
+	text-decoration: none;
+	/*color: #59FF0D;*/*/
+	font-size: 15px;
+	background-color: #F0D737;
+
+}
+
+.videocontainer {
+	width: 500px;
+	height: 500px;
+	padding: 5px 5px;
+	z-index: 0;
+	position: relative;
+	display: inline-block;
+	/*border: 1px solid black;*/
+
+}
+
+
+video.featurevideo {
+  max-height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+
+
+.footermenu {
+	width: 100%;
+	float: left;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	clear: right;
+	display: inline-block;
+	padding: 0px;
+}
+
+ul .footermenu {
+	display: inline-block;
+	list-style: none;
+	margin: 0px 0px;
+}
+
+ul.footermenu li{
+	display: inline-block;
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	padding: 5px 60px 5px 60px;
+	left: 0px;
+	margin: 2%;
+	width: 10%;
+	
+}
+/*ul.footermenu li:hover {
+	border: none;
+	font-size: 15px;
+	text-decoration: none;
+	
+
+}*/

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+
+  <title>IFA2015</title>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="projecttemplate.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+
+</head>
+<body>
+
+<div>
+	<h3>
+		<% if user_signed_in? %>
+			<%= link_to("Log out", destroy_user_session_path, :method => :delete) %>
+		<% else %>
+			<%= link_to("Log in", new_user_session_path) %>
+		<% end %>
+		<h3>
+				<%= link_to("Sign up", new_user_registration_path) %>
+		</h3>
+	</h3>
+</div>
+<div class="logo">
+		Information for Action
+
+	</div>
+<nav class="main">
+		<ul class="main">
+			<li class="main">
+				<h3>
+				<%= link_to("Home", home_path) %>
+				</h3>
+			</li>
+			<li class="main">
+				<a href="#surveys">
+						Multimedia
+				</a>
+			</li>
+			<li class="main">
+				<h3>
+				<%= link_to("Sign up", new_user_registration_path) %>
+				</h3>
+			</li>
+			<li class="main">
+				<a href="#contact">
+					Contact
+				</a>
+			</li>
+			<!-- <li class="main"> <a href="https://twitter.com/lilmammaet" target= "_blank">
+					<img src="twitter_logo.jpg" style="width: 30px;">
+					 </a></li>
+			<li class="main"> <a href="https://www.linkedin.com/pub/emily-thomas/10/a43/7b" target= "_blank"> 
+					<img src="linkedin_logo.jpg" style="width: 30px;">
+					 </a></li>
+			<li class="main"> <a href="https://www.flickr.com/photos/actionjunkie/" target= "_blank"> 
+			<img src="flickr_logo.jpg" style="width: 30px;">
+			</a></li>		  -->
+		</ul>			
+		<div class="divider"></div>
+	</nav>
+
+
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<%= yield %>
+
+</body>
+</html>
