@@ -1,0 +1,94 @@
+
+<div class="pagecontainer"> 
+	
+	
+	<!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  		<iframe frameborder="0" height="100%" width="100%" 
+    	src="https://youtube.com/embed/0kv4EtUpBrA?loop=1&autoplay=1&controls=0&showinfo=0&autohide=1">
+  		</iframe>
+	</div> -->
+
+
+
+			<!-- <h2 style="position: relative;">20 Years Erased</h2> -->
+	</video>
+	
+	<div class="randombandname">
+			<!-- form showing the random bandname -->
+			
+			<%= form_for(@random_bandname) do |f| %>
+				<%= f.text_field :firstword, class: "randomtitle" %>
+				<%= f.text_field :secondword, class: "randomtitle" %>
+			<% end %>
+	</div>
+	<div class="trumpcontainer">
+		<%= image_tag('trumpfired.jpg', class: "trumpfired" )%>
+		<div class="trumpphrase">
+			<%= @trump %> <%= @random_bandname.firstword %> <%= @random_bandname.secondword %> 
+
+		</div>
+	</div>	
+	<div class="buttonbar">	
+
+
+		<!-- <div class="randombandnamebutton"> -->
+			<!-- click on favicon to generate random bandname -->
+
+				<%= link_to new_bandname_path, class: ".fa-thumbs-o-down" do %>
+	  				<i class="fa fa-thumbs-o-down fa-3x"></i>
+				<% end %>
+
+		<!-- </div> -->
+		<!-- <div class="favoritebandnamebutton"> -->
+			<!-- click on favicon to generate random bandname -->
+			<!-- need to create a "post" request  which means i'm putting/posting to the DB-->
+
+			<%= link_to favoritebandnames_path(Bandname_id: @random_bandname.id, User_id:current_user.id), method: :post, class: ".fa-heart" do %>
+	  				<i class="fa fa-heart-o fa-3x"></i>
+
+				<% end %>
+
+		<!-- </div>
+		<div class="addbandnamebutton"> -->
+		<!-- click on favicon to generate random bandname -->
+  			<div class="add"> <i class="fa fa-plus-square-o fa-3x"></i>
+				
+			</div>	
+			
+			
+			<!-- <div class="trumpicon"> -->
+			<%#=javascript_include_tag "application" %>
+		
+			<div class="trumpicon">
+				<%= image_tag('trumpfired.jpg', class: "trumpicon" )%>
+		
+			<!-- </div> -->
+			</div>
+
+		</div>
+	</div>	
+	
+
+	<div class="addbandname">
+			<!-- add an original bandname to the database -->
+		<div class="randomtitle">
+			<p>
+				Submit your own
+			</p>
+		<%= form_for(@new_bandname) do |f| %>
+			<%= f.text_field :firstword, class: "title" %>
+			<div class="submittitle">"First excellent word"</P>
+			<%= f.text_field :secondword, class: "title" %>
+	  		<p class="submittitle">"Second excellent word"</p>
+	  		<%= f.button class: "actions" do %>
+	  			Submit Bandname to the Master Database of Glory
+
+		<% end %>
+		</div>
+
+	</div>
+
+	</div>
+</div>
+
+<% end %>

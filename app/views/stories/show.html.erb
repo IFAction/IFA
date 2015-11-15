@@ -1,0 +1,7 @@
+<% if @story %>
+	<%= @story.body %>
+	<%= link_to image_tag(@post.image.url(:med)), @post.image.url %>
+<% else %>
+	"hmmm"
+<% end %>
+

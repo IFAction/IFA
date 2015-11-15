@@ -1,0 +1,62 @@
+
+<!--  
+<div class="herovideocontainer">
+	<video muted autoplay loop class="herovideo">
+
+		<%#= link_to image_tag("empty_theater_stage.mp4"), class: "herovideo"%>
+
+		  	
+		  		
+			<!-- <h2 style="position: relative;">20 Years Erased</h2> -->
+<!-- 	</video> -->
+<!-- </div> -->
+
+
+
+<div class="gotobandnames"> 
+	<div>
+		<%= link_to image_tag('rockconcert.jpg'), new_bandname_path %>
+	</div>
+</div>
+<div class="splash">
+	<p class="splash">
+			Beautiful Bandnames for a Beautiful You
+	</p>
+
+		<%= link_to new_bandname_path, class: "fa-heart-o" do %>
+	  				<i class="fa fa-hand-pointer-o"></i>
+
+				<% end %>
+	<div class="subtitle">	
+		Tap for Sound
+	</div>
+</div>
+
+	<!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  		<iframe frameborder="0" height="100%" width="100%" 
+    	src="https://youtube.com/embed/0kv4EtUpBrA?loop=1&autoplay=1&controls=0&showinfo=0&autohide=1">
+  		</iframe>
+	</div> 
+	 -->
+	
+
+
+<!-- for each item in bandames, show each bandname -->		<!--  -->
+
+ <!--for each item in bandames, show each bandname -->		  
+
+	<div class ="mybandnames">
+	<i class="fa fa-diamond fa-4x"></i>
+	<i class="fa fa-hand-rock-o fa-4x"></i>
+		<ul class="bandnamelist">
+	 		<% @mybandnames.each do |bandnamelist| %>
+
+	 		<li class="bandnamelist"><%= bandnamelist.firstword %> <%= bandnamelist.secondword %></li>
+	    
+	    	<% end %>
+	 		
+		</ul>
+
+	</div>
+
+

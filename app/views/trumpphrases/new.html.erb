@@ -1,0 +1,23 @@
+
+	<div class="addtrumpphrase">
+			<!-- add an original bandname to the database -->
+		<div class="randomtitle">
+			<p>
+				Submit your own
+			</p>
+		<%= form_for(@new_trumphrase) do |f| %>
+			<%= f.text_field :firstword, class: "title" %>
+			<div class="submittitle">"First excellent word"</P>
+			<%= f.text_field :secondword, class: "title" %>
+	  		<p class="submittitle">"Second excellent word</p>
+	  		<%= f.button class: "actions" do %>
+	  			Submit Bandname to the Master Database of Glory
+
+		<% end %>
+		</div>
+
+	</div>
+
+	
+
+<% end %>

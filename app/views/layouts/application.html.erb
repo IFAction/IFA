@@ -3,51 +3,74 @@
 <head>
   
 
-  <title>IFA2015</title>
+  <title>KB Creative</title>
 
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <%= yield(:head) %>
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="projecttemplate.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/stylesheets/projecttemplate.css"> -->
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 	</script>
 
+	<link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome.css">
+
+	<link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<script src="/javascript/bandname.js"></script>
+
+	<style type="text/css">
+    textarea { border: none; }
+	</style>
 </head>
 <body>
 
-<div>
-	<h3>
+<div class="usernavigation">
+	<ul class="usermain">
+		<li class="usermain">
 		<% if user_signed_in? %>
 			<%= link_to("Log out", destroy_user_session_path, :method => :delete) %>
+		 <li class="profilepic"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
+	
 		<% else %>
 			<%= link_to("Log in", new_user_session_path) %>
 		<% end %>
-		<h3>
+		</li>
+		<li>
 				<%= link_to("Sign up", new_user_registration_path) %>
-		</h3>
-	</h3>
+		</li>
+
+	</ul>
+	
+</div>
+
+<div class="divider">
 </div>
 <div class="logo">
-		Information for Action
+	Kb Creative
+</div>
 
-	</div>
 <nav class="main">
 		<ul class="main">
 			<li class="main">
-				<h3>
+				
 				<%= link_to("Home", home_path) %>
-				</h3>
+				
 			</li>
 			<li class="main">
-				<a href="#surveys">
-						Multimedia
-				</a>
+				
+				<%= link_to("Bandnames", bandnames_path) %>
+				
 			</li>
 			<li class="main">
-				<h3>
-				<%= link_to("Sign up", new_user_registration_path) %>
-				</h3>
+				<%= link_to("Stories", stories_path) %>
+			</li>
+			<li class="main">
+				
 			</li>
 			<li class="main">
 				<a href="#contact">
@@ -64,13 +87,13 @@
 			<img src="flickr_logo.jpg" style="width: 30px;">
 			</a></li>		  -->
 		</ul>			
-		<div class="divider"></div>
+		
 	</nav>
-
 
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+
 
 <%= yield %>
 

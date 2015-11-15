@@ -6,13 +6,19 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-root to: "stories#index"
+root to: "bandnames#index"
+
+resources :favoritebandnames
+
+resources :bandnames
 
 resources :users
 
 resources :stories
 
 resources :surveys
+
+resources :posts
 
 get "home" => "home#index"
   # Example of regular route:

@@ -1,0 +1,14 @@
+<div class="pagecontainer">
+
+<%= form_for @story, html: { multipart: true } do |f| %>
+
+	 <%= f.label(:title) %>
+	 <%= f.label(:subtitle) %>
+	 <%= f.label(:body) %>
+
+	  <%= f.text_field(:body) %> 
+	  <%= f.submit "Submit" %>
+
+<% end %>
+
+</div>

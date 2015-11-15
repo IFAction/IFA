@@ -11,7 +11,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151027231223) do
+ActiveRecord::Schema.define(version: 20151114011829) do
+
+  create_table "bandnames", force: :cascade do |t|
+    t.string   "firstword"
+    t.string   "secondword"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.integer  "user_id"
+    t.integer  "favoritescore"
+    t.integer  "Favoritebandname_id"
+  end
+
+  create_table "favoritebandnames", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "bandname_id"
+    t.string   "Firstword"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "string"
+    t.integer  "user_id"
+    t.string   "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stories", force: :cascade do |t|
+    t.string   "title"
+    t.string   "subtitle"
+    t.text     "body"
+    t.datetime "pubdate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
+  create_table "trumpphrases", force: :cascade do |t|
+    t.string   "firstsentence"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
@@ -27,6 +69,10 @@ ActiveRecord::Schema.define(version: 20151027231223) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

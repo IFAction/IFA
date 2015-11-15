@@ -13,9 +13,210 @@
  *= require_tree .
  *= require_self
  */
+.trump{
+
+	display: none;
+}
+
+
+
 .label {
 	width: 500px;
 
+}
+
+.fa-diamond {
+    /*width: 30%;*/
+	position: relative;
+	float: left;
+	padding: 2px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.fa-heart {
+    /*width: 30%;*/
+	position: relative;
+	display: inline-block;
+	float: left;
+	padding: 2px;   
+	cursor: pointer;
+	text-align: center;
+}
+
+.fa-thumbs-o-down {
+    /*width: 30%;*/
+	position: relative;
+	display: inline-block;
+	float: left;
+	padding: 2px;   
+	cursor: pointer;
+	text-align: center;
+}
+
+.fa-hand-pointer-o {
+    /*width: 30%;*/
+	position: fixed;
+	display: inline-block;
+	top: 60%;
+	left: 35%;
+	float: left;
+	margin: auto;
+	font-family: 'Oswald', sans-serif;
+	color:  #3399ff;
+
+	font-size: 25px;
+	text-shadow: 1px .5px #293333;
+
+	
+	
+
+}
+
+.fa-plus-square-o {
+   	/*width: 30%;*/
+	position: relative;
+	display: inline-block;
+	float: left;
+	padding: 2px;   
+	cursor: pointer;  
+	text-align: center;  
+   
+}
+
+.trumpcontainer{
+	/*width: 90%;*/
+	position: relative;
+	/*border: solid 1px black;*/
+	margin: auto;
+	display: inline-block;
+}
+
+.trumpphrase {
+	
+	position: relative;
+	float: left;
+	display: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	/*width: 30%;*/
+	font-style: italic;
+	border-color: Transparent;     
+}
+
+.trumpfired{
+	/*border: solid 1px black;*/
+	display: none;
+	width: 200px;
+	position: relative;
+	left: 10%;
+	padding: 2px;
+	cursor: pointer;
+	
+}
+
+.selected{
+
+
+	display: block;
+
+}
+
+.profilepic{
+
+	border-radius: 50%;
+	width: 60px;
+	position: relative;
+	float: right;
+	padding: 2px;
+	cursor: pointer;
+    
+
+
+}
+
+.trumpicon{
+	
+	border-radius: 50%;
+	width: 60px;
+	position: relative;
+	float: left;
+	padding: 2px;
+	cursor: pointer;
+
+	
+}
+
+.bandnamelist {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 500px;
+}
+.mybandnames {
+	display: inline-block;
+
+}
+
+ul.bandnamelist{
+    width: 50%;
+    border-top: 1px solid black;
+}      
+
+ul.bandnamelist li{
+
+	width: 100%;
+    border-bottom: 1px solid black;
+	
+}   
+
+
+.usernavigation {
+
+	position: fixed;
+	right: 20px;
+	font-size: 15px;
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+	/*z-index: 100;*/
+	/*text-decoration: none;*/
+}
+
+ul.usermain {
+	display: block;
+	font-family: 'Oswald', sans-serif;
+	/*padding: 0px 0px 0px 25px;*/
+	text-decoration: none;
+	/*z-index: -100;*/
+	
+}
+
+ul.usermain li {
+	display: inline-block;
+	font-size: 14px;
+	font-family: 'Oswald', sans-serif;
+	padding: 10px 25px 0px 0px;
+	color: black;
+	text-decoration: none;
+}
+
+
+.pagecontainer{
+
+	position: relative;
+	width: 80%;
+
+	margin: auto;
+
+
+}
+
+.notice{
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	
 }
 
 .form-group{
@@ -24,11 +225,20 @@
 
 }
 
+.signupfield {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+
+}
+
 .field {
 	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
 	text-align: center;
-	font-size: 24px;
+	font-size: 20px;
 
 }
 
@@ -39,13 +249,7 @@
 	font-size: 15px;
 
 }
-.actions {
-	font-family: 'Oswald', sans-serif;
-	text-decoration: none;
-	text-align: center;
-	font-size: 34px;
 
-}
 
 .mainimage {
 	width: 100%;
@@ -55,70 +259,78 @@
 	padding-left: 0px;
 }
 
-.emtheadertext {
-	display: inline-block;
-	position: fixed;
-	font-size: 50px;
-	width: 20%;
-	float: left;
-	/*left: 10; */
-	/*font-weight: 700;*/
-	font-family: 'Oswald', sans-serif;
-	margin: 0 auto;
-	text-align: left;
-	z-index: 100;	
-}
-
-
-.emtheadercontainer {
-	display: inline-block;
-	width: 20%;
-	position: relative;
-	font-size: 40px;
-	list-style: none;
-	/*font-family: 'Oswald', sans-serif;*/
-	margin: 0 auto;
-	padding-left: 15px;
-	/*padding-left: 30%;
-	padding-right: 30%;*/
-	text-decoration: none;
-	z-index: 1;
-
-}
-
-.logo {
+.bandnamebanner {
 
 	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
 	text-align: center;
+	font-size: 50px;
+
+}
+
+.formwrapper{
+
+	width: 80%;
+	float: left;
+	max-height: 300px;
+	/*border: solid 1px black;*/
+	margin: auto;
+}
+.logo {
+
+	position: fixed;
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	padding-left: 65px;
+	padding-bottom: 25px;
 	font-size: 24px;
+	z-index: -100;
 
 }
 
 .main {
+	
 	display: block;
 
+/*	z-index: -100;
+*/
 	
 }
 
+form input[type='text'] {
+   width: 40%;
+   height: 15%;
+   padding-top: 100px;
+   padding-bottom: 30px;
+
+ }
+
 ul.main {
+	position: fixed;
 	display: block;
 	font-family: 'Oswald', sans-serif;
 	/*padding: 0px 0px 0px 25px;*/
 	text-decoration: none;
-	text-align: center;
+	padding-top: 20px;
+	/*z-index: -100;*/
+
+
+	
 }
 
 ul.main li {
 	display: inline-block;
 	font-size: 14px;
 	font-family: 'Oswald', sans-serif;
-	padding: 10px 25px 0px 0px;
+	padding-left: 25px;
 	color: black;
 	text-decoration: none;
 }
 
+.backgroundvideo {
 
+	width: 100%;
+}
 
 ul.main li:hover {
 	border: none;
@@ -128,8 +340,15 @@ ul.main li:hover {
 
 }
 .divider {
-	border-top: solid 1px gray;
-	padding: 10px;
+	position: fixed;
+	margin-top: 15px;
+	border-top: solid 1px black;
+	background: white;
+	opacity: 50%;
+	/*z-index: -90;*/
+	
+
+	/*padding: 10px;*/
 }
 
 a, a:visited{
@@ -141,15 +360,7 @@ a, a:visited{
      color:#313333;
      text-decoration: none;
 }
-.emtfullpage {
-	width: 80%;
-	margin-left: 10%;
-	margin-left: 10%;
 
-	font-family: 'Oswald light', sans-serif;
-	position: relative;
-	display: inline-block;
-}
 
 p.narrativeblock {
 	font-family: 'Oswald', sans-serif;
@@ -173,7 +384,7 @@ h1{
 	font-family: 'Oswald', sans-serif;
 	color:  black;
 	font-size: 30px;
-	background-color: white;
+	/*background-color: white;*/
 }
 
 h3{
@@ -186,57 +397,15 @@ h3{
 	height: 30px;
 	width: 30px;
 }*/
-
-.featurevideo {
-	width: 100%;
-	position: absolute;
-	text-decoration: none;
-	top: 2px;
-	padding-left: 0px;
-	/*left: 1520px;*/
-	max-height: 500px;
-	/*3*/
-	/*background-color: #F8F8F8*/;
-	float: right;
-}
-
-.featurevideotitle {
-	display: relative;
+.actions{
+	font-size: 40px;
 	font-family: 'Oswald', sans-serif;
-	font-size: 14px;
-	text-align: right;
-}
-
-/*.featurevideoontainer {
-	background-color: blue;
-	position: relative;
-	float: left;
-	padding: 2px;
-
-}*/
-
-.scrollphotogallery {
-	width: 100%;
-	position: relative;
 	text-decoration: none;
-	top: 0px;
-	padding-left: 0px;
-	border: black 1px;
-	height: 200px;
+	text-align: center;
+	background-color: transparent;
+	
+}
 
-}
-.photogalleryfull {
-	width: 100%;
-	position: relative;
-	text-decoration: none;
-	top: 2px;
-	padding-left: 0px;
-	/*left: 1520px;*/
-	height: 900px;
-	background-color: white;
-	/*background-color: #F8F8F8*/;
-	float: right;
-}
 .fixedbutton {
 	top: 90%;
 	position: fixed;
@@ -253,30 +422,228 @@ h3.fixedbutton {
 	/*z-index: 100;*/
 }
 
-.imagecontainer {
-	width: 45%;
-	position: relative;
-	float: left;
-	padding: 2px;
+./*generateimage {
+	margin: auto;
+    width: 30%;
+    border:3px solid #73AD21;
+    padding: 10px;
 
 }
+
+.generateimage:hover{
+
+	background-color: green;
+
+
+}*/
+
+
+
+.trump{
+
+	display: block;
+	position: relative;
+}
+
+.buttonbar{
+	width: 5%;
+	/*border: solid 1px black;*/
+	margin: auto;
+	top:20%;
+	right: 10%;
+	position: fixed;
+	font-family: 'Oswald', sans-serif;
+	z-index: 100;
+}
+.generateimagecontainer {
+  color: #fff;
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+
+.randombandname {
+  margin: auto;
+  display: inline-block;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 95px;
+  text-align: center;
+  }
+
+ .herovideocontainer {
+	display: block;
+	max-width: 100%;
+	/*position: absolute;*/
+	
+}
+.herovideo {
+	display: inline-block;
+	max-width: 100%;
+	
+}
+
+.splash{
+	position: fixed;
+	top: 50%;
+	left: 20%;
+	margin: auto;
+	font-family: 'Oswald', sans-serif;
+	color:  white;
+	font-size: 50px;
+	text-shadow: 1px .5px #293333;
+
+}
+
+.gotobandnames{
+
+	position: fixed;
+	z-index: -99; 
+	padding-top: 60px;
+	width: 100%; 
+	height: 100%
+}
+
+
+.addbandname {
+  
+	padding-top: 50px;
+	display: none;
+ 	float: left;
+ 	position: relative;
+  	width: 100%;
+	border-radius: 6px;
+	cursor: pointer;
+	top-border: 1px solid black;
+	text-align: center;
+	  
+}
+.alert{
+
+	position: fixed;
+	display: none;
+}
+
+.randombandnamebutton {
+
+  	/*width: 45%;
+	position: relative;
+	float: left;
+	padding: 2px;*/
+  
+}
+
+
+.favoritebandnamebutton {
+
+  	/*width: 45%;
+	position: relative;
+	float: left;
+	padding: 2px;*/
+  
+}
+.addbandnamebutton {
+
+  	/*width: 45%;
+	position: relative;
+	float: left;
+	padding: 2px;*/
+  
+}
+
+.generateimage {
+  margin: auto;
+  width: 50%;
+  background: #2db34a;
+  border-radius: 6px;
+  cursor: pointer;
+  
+  line-height: 95px;
+  text-align: center;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  
+}
+.generateimage:hover {
+  /*background: #ff7b29;*/
+}
+
+.mybandnames {
+	display: none;
+	position: fixed;
+	right:10px;
+	top: 100px;
+	margin: auto;
+    width: 10%;
+    border:3px solid #73AD21;
+    padding: 10px;
+
+}
+
 img {
 	width: 100%;
 	padding: 2px;
 }
-.subtitle {
-	display: inline-block;
+
+.signuptitle {
+	
 	font-family: 'Oswald', sans-serif;
-	font-size: 10px;
-	text-align: right;
+	font-size: 60px;
+	margin: auto;
+	padding-top: 60px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px .5px #293333;
+	
+
+	
 }
 
+.submittitle{
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	font-size: 24px;
+}
 .title {
 	display: inline-block;
 	font-family: 'Oswald', sans-serif;
-	font-size: 14px;
-	text-align: right;
+	font-size: 50px;
+	border-color: Transparent;     
+	border-bottom: solid black 1px;
+	text-shadow: 1px .5px #293333;
+
+	
 }
+
+.randomtitle {
+	
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 60px;
+	text-align: center;
+	border-color: Transparent;     
+}
+
+
+.save {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+}
+.subtitle {
+	position: fixed;
+	top: 60%;
+	left: 40%;
+	margin: auto;
+	font-family: 'Oswald', sans-serif;
+	color:  #3399ff;
+
+	font-size: 35px;
+	text-shadow: 1px .5px #293333;
+
+}
+
+
 .articlesubtitle {
 	display: block;
 	font-family: 'Oswald', sans-serif;
@@ -285,12 +652,6 @@ img {
 	margin-bottom: 4%;
 }
 
-.articletitle {
-	display: block;
-	font-family: 'Oswald', sans-serif;
-	font-size: 14px;
-	text-align: left;
-}
 
 p.articletitle:hover {
 	border: none;
@@ -300,7 +661,8 @@ p.articletitle:hover {
 	/*color: #FF00FF;*/
 }
 
-a:hover {
+
+a:hover.randombandname {
 	/*border: none;
 	font-size: 15px;
 	text-decoration: none;
@@ -308,25 +670,6 @@ a:hover {
 	font-size: 15px;
 	background-color: #F0D737;
 
-}
-
-.videocontainer {
-	width: 500px;
-	height: 500px;
-	padding: 5px 5px;
-	z-index: 0;
-	position: relative;
-	display: inline-block;
-	/*border: 1px solid black;*/
-
-}
-
-
-video.featurevideo {
-  max-height: 550px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block
 }
 
 

@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+	<link rel="stylesheet" type="text/css" href="ifa.css">
+
+	<title>IFA</title>
+
+</head>
+
+<body class="home">
+		<div style='position:absolute;z-index:0;left:0;top:0;width:100%;height:100%'>
+			<div class="ifahometextcontainer">
+				<p class="ifahometext">IFA</p>
+				<p class="ifasubtext">
+					Information for Action
+				</p>
+				<ul class="main">
+						<li class="about">About</li>
+						
+					<li class="projects">Projects</li>
+					<!-- <li class="contact">Contact</li> -->
+				</ul>
+			</div>
+		</div>
+		</div>	
+		
+		<div class="videocontainerabout">
+			<img src="fence.jpg" class="videocontainerabout">
+			<!-- <video controls muted display none autoplay loop class="video">
+	  			<source src="street.mov" type="video/mov">
+	  			<source src="street.ogg" type="video/ogg">
+	  			Your browser does not support the video tag. -->
+			</video>
+		</div>
+		<div class="videocontainerprojects">
+			<img src="crownheights.jpg">
+			<!-- <video controls muted display none autoplay loop class="video">
+	  			<source src="crane.mov" type="video/move">
+	  			<source src="crane.ogg" type="video/ogg">
+	  			Your browser does not support the video tag. -->
+			</video>
+		</div>
+			<div class="projectcontainer">
+				<div class="projectstext">
+					<h1>PERCEPTION + REALITY: GENTRIFICATION IN CROWN HEIGHTS</h1>
+					<p class="narrative">
+						Our first project will merge the perception and reality surrounding gentrification in Crown Heights. We are listening, collecting data, speaking with communities, and researching actionable, pragmatic options for change. 
+
+					</p>
+					<!-- <div class="photogalleryfull">
+							<a name="galleryfull"></a>
+							<div class="imagecontainer">
+							<p class="closed">Close</p>	
+								<img src="occupy.jpg">
+								<p class="title">Occupy Wall Street</p>
+								<p class="subtitle">September 17, 2011</p>
+							</div>
+							<div class="imagecontainer">
+								<img src="sittingmen.jpg">
+								<p class="title">Argentina</p>
+								<p class="subtitle">10/10/2005</p>
+							</div>
+							<div class="imagecontainer">
+								<img src="vigil.jpg">
+								<p class="title">Advocates in front of the People's Republic of China embassy.</p>
+								<p class="subtitle">October 5, 2010</p>
+							</div>
+							<div class="imagecontainer">
+								<img src="discodays.jpg">
+								<p class="title">Disco Days</p>
+								<p class="subtitle">August 12, 2011</p>
+							</div>
+							<div class="imagecontainer">
+								<img src="cave.jpg">	
+								<p class="title">Amethyst mining cave in northern Argentina</p>
+								<p class="subtitle">May 6, 2011</p>
+							</div>
+							<div class="imagecontainer">
+								<img src="riverwoman.jpg">	
+								<p class="title">Northern Argentine border with Paraguay and Brazil</p>
+								<p class="subtitle">May 6, 2011</p>
+							</div>	
+
+							<div class="imagecontainer">
+									<iframe width="100%" height="300"
+									src="https://www.youtube.com/embed/5em6CKEQQHI">
+									</iframe>
+								<p class="title">Crowdfunding Tips, Jennifer Fox:</p>
+								<p class="subtitle">Producer, POV Interactive. Uploaded on Jan 5, 2012</p>
+						</div> -->
+			</div>		
+		</div>
+	<div class="aboutcontainer">
+		<div class="abouttext">	
+			<h1>Storytelling + Technology + Social Justice
+			</h1>
+			<p class="narrative">
+					Information for Action combines interactive storytelling, data journalism, technology, and direct community input to improve lives and policy.
+
+			</p>
+		</div>
+	</div>	
+	<div class="contacttext">
+		<h1>Contact</h1>
+		<p class="narrative">
+			Lorem ipsum dolor sit amet, an eros ancillae vim. Postea ornatus efficiantur eos ea, perpetua adipiscing id per. Quo te amet debitis, nec at rebum salutandi intellegat. Homero nominati id sea.
+		</p>
+	</div>
+	<div class="contact">
+			<h3>Contact: info@informationforaction.org</h3>
+		</div>
+	<script>
+		$(document).ready(function() {	
+			$(".about").click(function(){
+				$(this).toggleClass("selected");
+				$("body") .toggleClass ("about");				
+				if ($(".about").hasClass("selected")) {
+					$(".aboutcontainer") .css ("display","block");
+					$(".abouttext") .css ("display","block");
+					$(".projectstext") .css ("display","none");
+					$(".ifasubtext") .css ("color","white");
+					$(".ifahometext") .css ("color","white");
+					$(".projects") .removeClass ("selected");
+					// $(".videocontainerabout") .css ("display","none");
+					$(".videocontainerabout") .fadeIn (2000)
+					$(".projectcontainer") .css ("display","none");
+					$(".videocontainerprojects") .css ("display","none");
+					// $(".narrative") .animate ({ 
+					// 	color: #CCFFFF;
+					// }, 2000);	
+						
+				} 
+				else {
+					$(".abouttext") .css ("display","none")
+					$(".ifasubtext") .css ("color","white");
+					$(".aboutcontainer") .css ("display","none");
+				}
+				
+			});
+
+			$(".projects").click(function(){
+				$(this).toggleClass("selected");
+				$("body") .toggleClass ("projects");	
+				
+				if ($(".projects").hasClass("selected")) {
+					$(".projectcontainer") .css ("display","block");
+					$(".projectstext") .css ("display","block");
+					$(".abouttext") .css ("display","none");
+					$(".ifasubtext") .css ("color","#293333");
+					$(".ifahometext") .css ("color","#293333");
+					$(".about") .removeClass ("selected");
+					$(".videocontainerprojects") .fadeIn (2000);
+					// $(".videocontainerprojects") .css ("display","block");
+					$(".videocontainerabout") .css ("display","none");
+				}
+				else	{
+					$(".projecttext") .css ("display","none");
+					$(".projectcontainer") .css ("display","none");
+					$(".ifasubtext") .css ("color","#293333");
+					$(".ifahometext") .css ("color","#293333");
+					$(".aboutcontainer") .css ("display","none");
+				}
+					
+			});
+			$(".ifahometext").click(function(){
+				$(this).toggleClass("selected");
+				$("body") .addClass ("home");
+				$("body") .removeClass ("about");
+				$("body") .removeClass ("projects");	
+				if ($(".ifahometext").hasClass("selected")) {
+					$(".projecttext") .css ("display","none");
+					$(".projectcontainer") .css ("display","none");
+					$(".ifasubtext") .css ("color","#293333");
+					$(".abouttext") .css ("display","none")
+					$(".videocontainerabout") .css ("display","none");
+					$(".videocontainerprojects") .css ("display","none");
+					$(".aboutcontainer") .css ("display","none");
+
+
+				}
+			});
+		});
+</script>
+	
+</div>
+
+</body>
+
+</html>

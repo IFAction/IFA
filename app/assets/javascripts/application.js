@@ -12,5 +12,41 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
+
+$( document ).ready(function() {
+
+	// $(".mybandnames").click(function(){
+	// 	   $("this").next(".bandnamelist").toggle();
+	// 	});
+		
+		$(".mybandnames").click(function(){
+		    $("this").css({
+		    	color: "green"
+		    });
+		});
+
+		$("ul li a").mouseenter(function() {
+          $(this).css({
+            textDecoration: "underline"
+          });
+        });
+
+        $("ul li a").mouseleave(function() {
+          $(this).attr("style", "");
+        });
+
+        $(".fa-diamond").click(function() {
+          if ($("ul").hasClass("open")) {
+            $("ul").slideUp();
+            $("ul").removeClass("open");
+            $("ul").addClass("closed");
+          } else if ($("ul").hasClass("closed")) {
+            $("ul").slideDown();
+            $("ul").removeClass("closed");
+            $("ul").addClass("open");
+          }
+        });
+
+
+});

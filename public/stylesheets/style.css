@@ -1,13 +1,43 @@
-.main {
-	display: block;
+/*
 
 	
 }
 
+.fa-diamond {
+        display: block;
+        float: right;
+        margin: 55px;
+        cursor: pointer;
+      }
+
+.bandnamelist {
+	display: none;
+	cursor: pointer;
+	font-size: 50px;
+}
+.mybandnames {
+	
+
+}
+
+ul.bandnamelist{
+    width: 50%;
+    border-top: 1px solid black;
+}      
+
+ul.bandnamelist li{
+
+	width: 100%;
+    border-bottom: 1px solid black;
+	
+}   
+
+
+
 ul.main {
 	display: block;
 	font-family: 'Oswald', sans-serif;
-	/*padding: 0px 0px 0px 25px;*/
+	
 	text-decoration: none;
 	text-align: center;
 }
@@ -26,8 +56,7 @@ ul.main li {
 ul.main li:hover {
 	border: none;
 	text-decoration: none;
-	/*color:#002900;
-	background-color: #C6F7D9;*/
+	
 
 }
 .divider {
@@ -44,3 +73,4 @@ a, a:visited{
      color:#313333;
      text-decoration: none;
 }
+*/
